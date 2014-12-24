@@ -1,0 +1,9 @@
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\GitHub\strangeioc\strangeioc_unity\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\GitHub\strangeioc\strangeioc_unity\obj\Debug\UnityVS.strangeioc_unity.CSharp.csprojResolveAssemblyReference.cache
+D:\GitHub\strangeioc\strangeioc_unity\obj\Debug\Assembly-CSharp.dll
+D:\GitHub\strangeioc\strangeioc_unity\obj\Debug\Assembly-CSharp.pdb

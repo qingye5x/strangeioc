@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35EE9CBD-F7EA-6119-2F2F-0503CA7D6EF5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\DOTween\AutoPlay.cs" />
+    <Compile Include="Assets\DOTween\AxisConstraint.cs" />
+    <Compile Include="Assets\DOTween\Core\ABSSequentiable.cs" />
+    <Compile Include="Assets\DOTween\Core\DOTweenComponent.cs" />
+    <Compile Include="Assets\DOTween\Core\Debugger.cs" />
+    <Compile Include="Assets\DOTween\Core\Delegates.cs" />
+    <Compile Include="Assets\DOTween\Core\Easing\Bounce.cs" />
+    <Compile Include="Assets\DOTween\Core\Easing\EaseCurve.cs" />
+    <Compile Include="Assets\DOTween\Core\Easing\EaseManager.cs" />
+    <Compile Include="Assets\DOTween\Core\Enums\FilterType.cs" />
+    <Compile Include="Assets\DOTween\Core\Enums\OperationType.cs" />
+    <Compile Include="Assets\DOTween\Core\Enums\SpecialStartupMode.cs" />
+    <Compile Include="Assets\DOTween\Core\Enums\UpdateMode.cs" />
+    <Compile Include="Assets\DOTween\Core\Extensions.cs" />
+    <Compile Include="Assets\DOTween\Core\SequenceCallback.cs" />
+    <Compile Include="Assets\DOTween\Core\TweenManager.cs" />
+    <Compile Include="Assets\DOTween\Core\TweenerCore.cs" />
+    <Compile Include="Assets\DOTween\Core\Utils.cs" />
+    <Compile Include="Assets\DOTween\DOTween.cs" />
+    <Compile Include="Assets\DOTween\Ease.cs" />
+    <Compile Include="Assets\DOTween\IDOTweenInit.cs" />
+    <Compile Include="Assets\DOTween\LogBehaviour.cs" />
+    <Compile Include="Assets\DOTween\LoopType.cs" />
+    <Compile Include="Assets\DOTween\PathMode.cs" />
+    <Compile Include="Assets\DOTween\PathType.cs" />
+    <Compile Include="Assets\DOTween\Plugins\ColorPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\ABSTweenPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\IPlugSetter.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\ITPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\ITweenPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PathCore\ABSPathDecoder.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PathCore\CatmullRomDecoder.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PathCore\ControlPoint.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PathCore\LinearDecoder.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PathCore\Path.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\PluginsManager.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Core\SpecialPluginsUtils.cs" />
+    <Compile Include="Assets\DOTween\Plugins\FloatPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\IntPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\ColorOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\FloatOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\NoOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\PathOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\QuaternionOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\RectOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\StringOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\Vector3ArrayOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Options\VectorOptions.cs" />
+    <Compile Include="Assets\DOTween\Plugins\PathPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\QuaternionPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\RectOffsetPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\RectPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\StringPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\UintPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Vector2Plugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Vector3ArrayPlugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Vector3Plugin.cs" />
+    <Compile Include="Assets\DOTween\Plugins\Vector4Plugin.cs" />
+    <Compile Include="Assets\DOTween\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\DOTween\Sequence.cs" />
+    <Compile Include="Assets\DOTween\ShortcutExtensions.cs" />
+    <Compile Include="Assets\DOTween\Tween.cs" />
+    <Compile Include="Assets\DOTween\TweenExtensions.cs" />
+    <Compile Include="Assets\DOTween\TweenParms.cs" />
+    <Compile Include="Assets\DOTween\TweenSettingsExtensions.cs" />
+    <Compile Include="Assets\DOTween\TweenType.cs" />
+    <Compile Include="Assets\DOTween\Tweener.cs" />
+    <Compile Include="Assets\DOTween\UpdateType.cs" />
+    <Compile Include="Assets\RollBox\BoxView.cs" />
+    <Compile Include="Assets\RollBox\RollBox.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Algebraics\Either.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Algebraics\Option.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Algebraics\Tuple.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Algebraics\Unit.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\Comparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\CreateWithComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\EqualityComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\FuncEnumerable.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\ICollectionExtensions.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\IDictionaryExtensions.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\IListExtensions.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\IListStepper.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\InspectorKeyValuePair.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Collections\LinkedListStepper.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Comparers\EnumComparers.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Comparers\KeyValuePairComparers.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Configuration.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Events.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Examples\ExampleConfiguration.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Factory.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Finder.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Compare\Utilities\LogUnregisteredOnDestroy.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Comparisons\Comparisons.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Comparisons\FuncComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Comparisons\FuncEqualityComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Comparisons\IComparableComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Comparisons\IEquatableEqualityComparer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Delegates\DelegateExtensions.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Delegates\Delegates.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Delegates\Tupled.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Dispose\Disposable.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Dispose\DisposalQueue.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Dispose\SmoothDisposer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Events\GenericEvents.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Platform\BasePlatform.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Platform\Runtime.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Pools\KeyedPool.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Pools\KeyedPoolWithDefaultKey.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Pools\Pool.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Pools\PoolWithInitializer.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Pools\SystemPools.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Collections\Grouping.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Collections\Linked.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Collections\Lookup.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\AggregateContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\ConcatContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\EitherContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\FlattenContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\GroupByContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\GroupJoinContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\HashSetContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\IntContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\JoinContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\LinkedContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\PredicateContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\SelectContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\SelectOptionContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\SelectSlinqContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\ZipAllContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\ChainedOrPooled\ZipContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Mutation\BacktrackDetector.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Mutation\BacktrackException.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Mutation\Mutator.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\FuncContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\FuncOptionContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\IEnumerableContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\IListContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\LinkedListContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Context\Simple\OptionContext.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Slinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Slinqable.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\DistinctLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\DistinctSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\ExceptLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\ExceptSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\GroupByLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\GroupBySlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\GroupJoinLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\GroupJoinSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\IntersectLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\IntersectSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\JoinLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\JoinSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\OrderByLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\OrderBySlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\SlinqTest.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\UnionLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\UnionSlinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\WhereTakeSelectAggregateLinq.cs" />
+    <Compile Include="Assets\Smooth\Foundations\Slinq\Test\WhereTakeSelectAggregateSlinq.cs" />
+    <Compile Include="Assets\examples\scripts\justtests\TesterContext.cs" />
+    <Compile Include="Assets\examples\scripts\justtests\TesterContextView.cs" />
+    <Compile Include="Assets\examples\scripts\justtests\view\ITesterView.cs" />
+    <Compile Include="Assets\examples\scripts\justtests\view\TesterMediator.cs" />
+    <Compile Include="Assets\examples\scripts\justtests\view\TesterView.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\common\controller\KillAudioListenerCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\GameContext.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\GameRoot.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\GameEvent.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\GameOverCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\RemoveSocialContextCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\ReplayGameCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\ShipDestroyedCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\UpdateScoreCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\startupSequence\StartAppCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\controller\startupSequence\StartGameCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\model\IScore.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\model\ScoreModel.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\util\GameLoop.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\util\IGameTimer.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\ClickDetector.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\EnemyMediator.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\EnemyView.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\ScoreboardMediator.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\ScoreboardView.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\ShipMediator.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\game\view\ShipView.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\MainContext.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\MainRoot.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\controller\GameCompleteCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\controller\LoadSceneCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\controller\MainEvent.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\main\controller\StartCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\SocialContext.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\SocialRoot.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\CreateFriendListCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\CreateUserTileCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\GameCompleteCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\LoadSceneCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\RemoveContextCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\SocialEvent.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\controller\StartCommand.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\service\FacebookService.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\service\GoogleService.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\service\ISocialService.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\service\UserVO.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\view\AwardView.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\view\AwardViewMediator.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
+    <Compile Include="Assets\examples\scripts\multiplecontexts\social\view\UserTileView.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\MyFirstContext.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\MyFirstProjectRoot.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\controller\CallWebServiceCommand.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\controller\ExampleEvent.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\controller\StartCommand.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\model\ExampleModel.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\model\IExampleModel.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\service\ExampleService.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\service\IExampleService.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\view\ClickDetector.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\view\ExampleMediator.cs" />
+    <Compile Include="Assets\examples\scripts\myfirstproject\view\ExampleView.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\SignalsContext.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\SignalsRoot.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\controller\CallWebServiceCommand.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\controller\StartCommand.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\model\ExampleModel.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\model\IExampleModel.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\service\ExampleService.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\service\IExampleService.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\signal\CallWebServiceSignal.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\signal\FulfillWebServiceRequestSignal.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\signal\ScoreChangedSignal.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\signal\StartSignal.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\view\ClickDetector.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\view\ExampleMediator.cs" />
+    <Compile Include="Assets\examples\scripts\signalsproject\view\ExampleView.cs" />
+    <Compile Include="Assets\scripts\strange\ReadMe.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\CommandExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\CommandKeys.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\ICommand.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\ICommandBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\ICommandBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\api\IPooledCommandBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\Command.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\CommandBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\CommandBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\CommandException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\EventCommand.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\EventCommandBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\command\impl\SignalCommandBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\ContextEvent.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\ContextExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\ContextKeys.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\ContextStartupFlags.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\IContext.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\IContextView.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\Context.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\ContextException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\ContextView.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\CrossContext.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\CrossContextBridge.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\context\impl\MVCSContext.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\api\DispatcherExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\api\IDispatcher.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\api\ITriggerProvider.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\api\ITriggerable.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\api\EventCallbackType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\api\EventDispatcherExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEvent.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEventBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEventDispatcher.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventDispatcher.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventDispatcherException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\eventdispatcher\impl\TmEvent.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\dispatcher\impl\DispatcherException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\implicitBind\ImplementorAttribute.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\implicitBind\api\IImplicitBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\implicitBind\impl\ImplicitBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\InjectAttribute.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\ICrossContextInjectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\IInjectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\IInjectionBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\IInjector.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\IInjectorFactory.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\InjectionBindingScope.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\InjectionBindingType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\api\InjectionExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\CrossContextInjectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\InjectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\InjectionBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\InjectionException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\Injector.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\injector\impl\InjectorFactory.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\IMediationBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\IMediationBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\IMediator.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\IView.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\MediationEvent.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\api\MediationExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\EventMediator.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\EventView.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\MediationBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\MediationBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\MediationException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\Mediator.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\mediation\impl\View.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\api\IPool.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\api\IPoolable.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\api\PoolExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\api\PoolInflationType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\api\PoolOverflowBehavior.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\impl\Pool.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\pool\impl\PoolException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\api\IReflectedClass.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\api\IReflectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\api\ReflectionExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\impl\ReflectedClass.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\impl\ReflectionBinder.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\reflector\impl\ReflectionException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\api\ISequenceBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\api\ISequenceCommand.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\api\ISequencer.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\api\SequencerExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\EventSequenceCommand.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\EventSequencer.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\SequenceBinding.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\SequenceCommand.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\Sequencer.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\sequencer\impl\SequencerException.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\signal\api\IBaseSignal.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\signal\api\SignalExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\signal\impl\BaseSignal.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\signal\impl\Signal.cs" />
+    <Compile Include="Assets\scripts\strange\extensions\signal\impl\SignalException.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\BinderExceptionType.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\BindingConst.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\BindingConstraintType.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\IBinder.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\IBinding.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\IInstanceProvider.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\IManagedList.cs" />
+    <Compile Include="Assets\scripts\strange\framework\api\ISemiBinding.cs" />
+    <Compile Include="Assets\scripts\strange\framework\impl\Binder.cs" />
+    <Compile Include="Assets\scripts\strange\framework\impl\BinderException.cs" />
+    <Compile Include="Assets\scripts\strange\framework\impl\Binding.cs" />
+    <Compile Include="Assets\scripts\strange\framework\impl\SemiBinding.cs" />
+    <None Include="Assets\examples\scripts\multiplecontexts\ReadMe.txt" />
+    <None Include="Assets\examples\scripts\myfirstproject\ReadMe.txt" />
+    <None Include="Assets\examples\scripts\signalsproject\ReadMe.txt" />
+    <None Include="Assets\scripts\strange\extensions\ReadMe.txt" />
+    <None Include="Assets\Smooth\Foundations\__Foundations-Git-Readme.txt" />
+    <None Include="Assets\Smooth\Foundations\__Foundations-License.txt" />
+    <None Include="Assets\Smooth\Foundations\__Foundations-Version.txt" />
+    <None Include="Assets\StrangeIoC\LICENSE-2.0.txt" />
+    <None Include="Assets\StrangeIoC\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.CSharp.targets" />
+</Project>
