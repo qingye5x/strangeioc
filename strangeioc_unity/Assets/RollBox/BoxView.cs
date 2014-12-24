@@ -9,15 +9,33 @@
 *************************************************************************************/
 
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BoxView : MonoBehaviour
 {
-    List<> 
+    private List<Transform> _edgeList = new List<Transform>();
 
-	// Use this for initialization
-	void Start ()
-	{
-	
-	}
+    void Awake()
+    {
+        //find all edge
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            _edgeList.Add(transform.GetChild(i));
+        }
+    }
+
+    public void DoRotate(Vector3 direction)
+    {
+        
+    }
+
+    Transform GetRotateEdge(Vector3 direction)
+    {
+        //first find bottom edge
+        var bottomEdge = _edgeList.Where(x => x.position.y == 0f);
+
+        return bottomEdge.First(x => x.position.normalized == direction);
+    }
+
 }
